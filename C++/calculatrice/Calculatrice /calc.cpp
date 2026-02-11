@@ -2,7 +2,7 @@
 // This program is a command line tool used to evaluate postfixed
 // and infixed mathematical expressions
 // Usage:
-//  calc [OPTION...]
+//  calc [OPTION...] test
 //
 //  -f, --format arg  Specify expression input format [auto | infix | postfix]
 //                    (default: postfix)
