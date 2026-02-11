@@ -1,0 +1,9 @@
+#!/usr/bin/expect -f
+set timeout 1
+expect_after timeout { send_user "\nEchec des tests !\n" ; exit 1 }
+spawn ./using_expect 
+#deroule du programme 
+expect "Combien de valeurs ?>"
+
+
+Prendre des notes

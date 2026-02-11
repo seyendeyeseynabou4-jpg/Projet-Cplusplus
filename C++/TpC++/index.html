@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>S1.01 - Implémentation d’un besoin client</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="index_fichiers/awesome-parser.css" rel="stylesheet">
+    <script src="index_fichiers/awesome-parser.umd.cjs" defer="defer"></script>
+    <script>
+      window.addEventListener('load', async () => {
+        const result = await AwesomeParser.pageRender('./tp.md')
+      })
+    </script>
+  </head>
+  <body><header class="main-header py-3 mb-5"><div class="container text-center"><p class="pre-title text-uppercase"><div>S1.01 - Implémentation d’un besoin client</div></p><h1 class="display-4 fw-bold"><div>Utilisation de expect</div></h1><div class="header-meta mt-4"><div class="meta-item"><i class="fa-solid fa-graduation-cap"></i><div>BUT Informatique, 1<sup>e</sup> année</div></div><div class="meta-item"><i class="fa-solid fa-clock"></i><div>1 séance</div></div><div class="meta-item"><i class="fa-solid fa-user"></i><div>Desbenoit B.</div></div></div></div></header><main class="container"><div class="container-md custom-content-wrapper"><div><h2>Exercice 1</h2>
+<p>Téléchargez le programme ci-dessous et compilez-le. Écrivez, comme vu dans le diaporama, le script <code>expect</code>
+ permettant d'automatiser son exécution pour calculer la moyenne des 
+trois valeurs vues en cours. Modifiez ce script pour permettre le calcul
+ de cinq valeurs que vous choisirez, puis vérifier que le script 
+fonctionne comme attendu.</p>
+<h3>Calcul de la moyenne</h3>
+<pre><code class="language-cpp hljs" data-highlighted="yes"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;iostream&gt;</span></span>
+
+<span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{
+  std::cout &lt;&lt; <span class="hljs-string">"Combien de valeurs ?&gt;"</span>;
+  <span class="hljs-type">size_t</span> combien = <span class="hljs-number">0</span>;
+  std::cin &gt;&gt; combien;
+  <span class="hljs-type">double</span> somme = <span class="hljs-number">0</span>,valeur;
+  <span class="hljs-keyword">for</span> (<span class="hljs-type">size_t</span> i=<span class="hljs-number">0</span>; i&lt;combien; ++i) {
+    std::cout &lt;&lt; <span class="hljs-string">"Valeur ?&gt;"</span>;
+    std::cin &gt;&gt; valeur;
+    somme += valeur;
+  }
+  std::cout &lt;&lt; <span class="hljs-string">"La moyenne est "</span> &lt;&lt; somme/combien &lt;&lt; <span class="hljs-string">"."</span> &lt;&lt; std::endl;
+  <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<p><a href="https://ametice.univ-amu.fr/pluginfile.php/10151116/mod_resource/content/1/assets/moyenne.cpp" download="">Lien de téléchargement</a></p>
+<h2>Exercice 2</h2>
+<p>Téléchargez le programme ci-dessous, compilez-le et testez-le rapidement à la main.</p>
+<p>Ecrivez un script <code>expect</code> qui trouve automatiquement le nombre caché ?</p>
+<h3>Nombre mystère</h3>
+<pre><code class="language-cpp hljs" data-highlighted="yes"><span class="hljs-comment">// https://likegeeks.com/expect-command/</span>
+<span class="hljs-comment">// https://phoenixnap.com/kb/linux-expect</span>
+
+<span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;iostream&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;random&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;unistd.h&gt;</span></span>
+
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;
+
+<span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{
+  std::random_device rd; <span class="hljs-comment">// obtain a random number from hardware</span>
+  <span class="hljs-function">std::mt19937 <span class="hljs-title">gen</span><span class="hljs-params">(rd())</span></span>; <span class="hljs-comment">// seed the generator</span>
+  std::uniform_int_distribution&lt;&gt; <span class="hljs-built_in">distr</span>(<span class="hljs-number">1</span>, <span class="hljs-number">100</span>); <span class="hljs-comment">// define the range</span>
+  <span class="hljs-type">int</span> valeur = <span class="hljs-built_in">distr</span>(gen);
+
+  cout &lt;&lt; <span class="hljs-string">"Tentez de deviner la valeur que j'ai tirée au hasard entre 1 et 100 inclus !"</span> &lt;&lt; endl;
+  <span class="hljs-comment">// cerr &lt;&lt; "J'ai tiré la valeur " &lt;&lt; valeur &lt;&lt; " mais chut !... C'est un secret !" &lt;&lt; endl;</span>
+
+  <span class="hljs-type">int</span> essai = <span class="hljs-number">9999</span>;
+  <span class="hljs-keyword">do</span> {
+      cout &lt;&lt; <span class="hljs-string">"Tentez une valeur &gt;"</span> &lt;&lt; flush;
+      cin &gt;&gt; essai;
+      <span class="hljs-built_in">sleep</span>(<span class="hljs-number">2</span>);
+      <span class="hljs-keyword">if</span>(essai&lt;valeur)
+          cout &lt;&lt; <span class="hljs-string">"Non, plus grand !"</span> &lt;&lt; endl;
+      <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(essai&gt;valeur)
+          cout &lt;&lt; <span class="hljs-string">"Non, plus petit !"</span> &lt;&lt; endl;
+      <span class="hljs-keyword">else</span>
+          cout &lt;&lt; <span class="hljs-string">"Bravo ! Gagné !"</span> &lt;&lt; endl;
+  }
+  <span class="hljs-keyword">while</span> (essai!=valeur);
+
+  <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<p><a href="https://ametice.univ-amu.fr/pluginfile.php/10151116/mod_resource/content/1/assets/guess_number.cpp" download="">Lien de téléchargement</a></p>
+</div></div></main><footer class="main-footer bg-dark text-white py-2 mt-5"><div class="container text-center"><p class="mb-0"><div>©DESBENOIT Brett - IUT d'Aix-Marseille</div></p></div></footer></body></html>

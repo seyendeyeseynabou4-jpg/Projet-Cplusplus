@@ -1,0 +1,14 @@
+echo "Donnez une valeur numerique :"
+read Valeur1
+sleep $Valeur1
+echo "Message aprés $Valeur1 secondes"
+echo "Donnez une deuxieme valeur numerique :"
+read Valeur2
+sleep $Valeur2
+echo "Message aprés $Valeur2 secondes"
+echo "Donnez une troisieme valeur numerique :"
+read Valeur3
+sleep $Valeur3
+echo "Message aprés $Valeur3 secondes"
+
+

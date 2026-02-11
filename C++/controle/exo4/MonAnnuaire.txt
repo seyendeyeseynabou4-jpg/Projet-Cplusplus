@@ -1,0 +1,30 @@
+Desbenoit
+Brett
+1.8 H
+Enseignant-chercheur au LIS (UMR 7020), équipe G-MOD
+bd.jpg
+Remy
+Eric
+1.73 H
+Directeur des études INFO1, Enseignant-chercheur au LIS (UMR 7020), équipe G-MOD
+er.jpg
+Carmignac
+Laurent
+1.8 H
+Directeur des études INFO2
+lc.jpg
+Dias Da Fonseca
+Guilherme
+1.7 H
+Responsable des projets tuteurés, Enseignant-chercheur au LIS (UMR 7020), équipe ACRO
+gddf.jpg
+Einstein
+Albert
+1.7 H
+Un physicien célèbre !
+albert-einstein.jpg
+Hamilton
+Margaret
+1.52 F
+Sans le logiciel de bord qu'elle et son équipe du MIT ont développé, les astronaute d'Appolo n'aurait probablement pas pu allunir purement manuellement.
+Margaret_Hamilton_1995.jpg

@@ -1,0 +1,45 @@
+[TITRE]
+thieck
+[DESCRIPTION]
+thieck est une mignonne girl
+
+[LIVRES]
+Livre
+Titre : Thieck et sa meilleure amie Zeynab
+ISBN : 979-10-90636-07-1
+Langue : Anglais
+Genre : Roman
+Date : 12/2/2005
+Auteur : THIECK NIANG 
+Auteur : NADOU NDIAYE
+Auteur : FADEL DIENG
+Auteur : ZEYNAB SEYE
+Auteur : NDEYE ASTOU FALL
+Description : les 5 fantastiques
+
+FinDescription
+------------------
+Livre
+Titre : ndeye astou
+ISBN : 978-0-201-53082-7
+Langue : Arabe
+Genre : islam
+Date : 14/9/2009
+Auteur : Ndeye ASTOU FALL
+Description : Ndeye Astou FALL et ses Waliwou
+Ndeye Astou FALL, La fille pieuse
+
+FinDescription
+------------------
+Livre
+Titre : Zeyna et ses rabb
+ISBN : 978-1-56619-909-4
+Langue : Wolof
+Genre : Theatre
+Date : 19/9/2009
+Auteur : Ndeye Seynabou SEYE
+Description : Zeynab, la sytanei 
+Ndeye Astou FALL, La fille pieuse
+
+FinDescription
+------------------

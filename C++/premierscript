@@ -1,0 +1,3 @@
+echo "début du script $0"
+echo "Bonjour"
+echo "fin du script..."

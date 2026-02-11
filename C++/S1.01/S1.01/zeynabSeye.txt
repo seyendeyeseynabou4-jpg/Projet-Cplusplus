@@ -1,0 +1,91 @@
+[TITRE]
+Zeynab Seye
+[DESCRIPTION]
+ZEYNAB LA MIGNONNE GIRL
+
+LOVIOUX
+
+[LIVRES]
+Livre
+Titre : Ndeye et sa meilleure amie Zeynab
+ISBN : 979-10-90636-07-1
+Langue : Anglais
+Genre : Roman
+Date : 12/2/2005
+Auteur : Ndeye FALL
+Auteur : NADOU NDIAYE
+Auteur : FADEL DIENG
+Auteur : ZEYNAB SEYE
+Auteur : NDEYE ASTOU FALL
+Description : les 5 fantastiques
+
+FinDescription
+------------------
+Livre
+Titre : ndeye astou
+ISBN : 978-0-201-53082-7
+Langue : Arabe
+Genre : islam
+Date : 14/9/2009
+Auteur : Ndeye ASTOU FALL
+Description : Ndeye Astou FALL et ses Waliwou
+Ndeye Astou FALL, La fille pieuse
+
+FinDescription
+------------------
+Livre
+Titre : Zeyna et ses rabb
+ISBN : 978-1-56619-909-4
+Langue : Wolof
+Genre : Theatre
+Date : 19/9/2009
+Auteur : Ndeye Seynabou SEYE
+Description : Zeynab, la sytanei 
+Ndeye Astou FALL, La fille pieuse
+
+FinDescription
+------------------
+Livre
+Titre : 12nana
+ISBN : 978-0-545-01022-1
+Langue : FRancais
+Genre : roman
+Date : 16/11/2025
+Auteur : Ndeye Seynabou Seye 
+Description : Nanana c'est juste une essaie
+
+FinDescription
+------------------
+Livre
+Titre : L'etranger
+ISBN : 978-2-07-036822-8
+Langue : Francais
+Genre : roman 
+Date : 12/12/1976
+Auteur : Albert Camus 
+Description : jskjd dks ddmd sdu dnsmnd ksak sdhjsh kasaksj sjhdj jahsj kek 
+
+FinDescription
+------------------
+Livre
+Titre : L'etranger
+ISBN : 978-0-7432-7356-5
+Langue : francais
+Genre : roman
+Date : 12/10/2008
+Auteur : Albert Camus 
+Description : jejeowke wjkska dmdoioqw jasdhjsd 
+
+FinDescription
+------------------
+Livre
+Titre : 20tesst 
+ISBN : 978-0-201-03801-9
+Langue : francais 
+Genre : jsp 
+Date : 12/9/2003
+Auteur : nabouza
+Description : djskjwko amsmalsk  dnjijsoq amsakms 
+
+FinDescription
+------------------

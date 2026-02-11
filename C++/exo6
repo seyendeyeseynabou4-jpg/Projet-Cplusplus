@@ -1,0 +1,48 @@
+
+echo "Donnez un nombre superieur a 5 en secondes:"&
+read nombre1 
+while [ $nombre1 -le 5 ]
+do
+  echo "Le nombre doit etre superieur a 5, donnez un autre nombre:"
+  read nombre1 
+done
+echo "Merci, vous avez donne le nombre:" $nombre1 "secondes"
+sleep $nombre1
+
+
+
+echo "Donnez un autre nombre superieur a 5 en secondes:"
+read nombre2
+while [ $nombre2 -le 5 ]
+do
+  echo "Le nombre doit etre superieur a 5, donnez un autre nombre:"
+  read nombre2
+done
+echo "Merci, vous avez donne le nombre:" $nombre2 "secondes"
+sleep $nombre2
+
+echo "Donnez un troisieme nombre superieur a 5 en secondes:"
+read nombre3
+while [ $nombre3 -le 5 ]
+do
+  echo "Le nombre doit etre superieur a 5, donnez un autre nombre:"
+  read nombre3
+done
+echo "Merci, vous avez donne le nombre:" $nombre3 "secondes"
+sleep $nombre3
+
+
+echo "donnez un message comme suit: 5 MessageA"
+read message1
+sleep $nombre1
+echo "Message aprés $nombre1 secondes"
+echo "donnez un message comme suit: 10 MessageB"
+read message2
+sleep $nombre2
+echo "Message aprés $nombre2 secondes"
+echo "donnez un message comme suit: 15 MessageC"
+read message3
+sleep $nombre3
+echo "Message aprés $nombre3 secondes"
+
+

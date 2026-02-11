@@ -1,0 +1,9 @@
+read -p "Donnez une valeur numerique:" Valeur1
+sleep $Valeur1
+echo "Message aprés $Valeur1 secondes"
+read -p "Donnez une deuxieme valeur numerique:" Valeur2
+sleep $Valeur2
+echo "Message aprés $Valeur2 secondes"
+read -p "Donnez une troisieme valeur numerique:" Valeur3
+sleep $Valeur3
+echo "Message aprés $Valeur3 secondes"

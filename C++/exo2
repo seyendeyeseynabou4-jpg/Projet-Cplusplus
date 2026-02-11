@@ -1,0 +1,3 @@
+echo "Donnez votre nom"
+read nom
+echo "Bonjour $nom, tout va bien"
